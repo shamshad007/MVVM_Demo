@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Bold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--LogoutVC-->
+        <scene sceneID="sGU-gL-oq1">
+            <objects>
+                <viewController storyboardIdentifier="LogoutVC" id="AHo-nS-Xjd" customClass="LogoutVC" customModule="Client_Exclusive" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZvG-Ah-0Ng">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xrK-bW-wta">
+                                <rect key="frame" x="32" y="288.33333333333326" width="329" height="275.66666666666674"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YnM-AS-jIy">
+                                        <rect key="frame" x="292" y="15" width="22" height="22"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="22" id="7Qi-RT-K6y"/>
+                                            <constraint firstAttribute="width" constant="22" id="9ot-ha-F2t"/>
+                                        </constraints>
+                                        <color key="tintColor" systemColor="systemGray2Color"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="close"/>
+                                        <connections>
+                                            <action selector="closeBtnTapped:" destination="AHo-nS-Xjd" eventType="touchUpInside" id="d5Z-ra-NwY"/>
+                                        </connections>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logout" translatesAutoresizingMaskIntoConstraints="NO" id="nwj-bH-6RN">
+                                        <rect key="frame" x="117.66666666666666" y="24" width="94" height="94"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="94" id="X1S-x0-ZzE"/>
+                                            <constraint firstAttribute="height" constant="94" id="mFT-7E-gl8"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="haJ-AJ-Bfe">
+                                        <rect key="frame" x="20" y="134" width="289" height="49.666666666666657"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Logout Confirmation" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cqd-kO-ffp">
+                                                <rect key="frame" x="0.0" y="0.0" width="289" height="21"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="18"/>
+                                                <color key="textColor" red="0.1647058824" green="0.1843137255" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are you sure you want to log out?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="70h-RU-ZEg">
+                                                <rect key="frame" x="0.0" y="31" width="289" height="18.666666666666671"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                                                <color key="textColor" red="0.066666666669999999" green="0.066666666669999999" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BfV-LO-nM6">
+                                        <rect key="frame" x="65.666666666666671" y="205.66666666666669" width="197.66666666666663" height="40"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="w19-Ej-NTo"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="16"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Logout">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="logoutBtnTapped:" destination="AHo-nS-Xjd" eventType="touchUpInside" id="NCh-5b-6LW"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="BfV-LO-nM6" secondAttribute="bottom" constant="30" id="3IJ-bm-Cbe"/>
+                                    <constraint firstItem="BfV-LO-nM6" firstAttribute="width" secondItem="xrK-bW-wta" secondAttribute="width" multiplier="0.6" id="E1P-Wa-lWL"/>
+                                    <constraint firstItem="BfV-LO-nM6" firstAttribute="centerX" secondItem="xrK-bW-wta" secondAttribute="centerX" id="Etm-Ha-jMY"/>
+                                    <constraint firstAttribute="trailing" secondItem="haJ-AJ-Bfe" secondAttribute="trailing" constant="20" id="IRL-1Y-8tV"/>
+                                    <constraint firstItem="haJ-AJ-Bfe" firstAttribute="leading" secondItem="xrK-bW-wta" secondAttribute="leading" constant="20" id="LT4-kT-cDO"/>
+                                    <constraint firstItem="BfV-LO-nM6" firstAttribute="top" secondItem="haJ-AJ-Bfe" secondAttribute="bottom" constant="22" id="LZf-sa-Uze"/>
+                                    <constraint firstItem="YnM-AS-jIy" firstAttribute="top" secondItem="xrK-bW-wta" secondAttribute="top" constant="15" id="ad7-LB-ibE"/>
+                                    <constraint firstItem="haJ-AJ-Bfe" firstAttribute="top" secondItem="nwj-bH-6RN" secondAttribute="bottom" constant="16" id="cV3-F5-9bc"/>
+                                    <constraint firstItem="nwj-bH-6RN" firstAttribute="centerX" secondItem="xrK-bW-wta" secondAttribute="centerX" id="o62-vI-W79"/>
+                                    <constraint firstItem="nwj-bH-6RN" firstAttribute="top" secondItem="xrK-bW-wta" secondAttribute="top" constant="24" id="sTy-bq-gdL"/>
+                                    <constraint firstAttribute="trailing" secondItem="YnM-AS-jIy" secondAttribute="trailing" constant="15" id="z7z-Lp-ggF"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vWx-MU-yn0"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.75" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="vWx-MU-yn0" firstAttribute="trailing" secondItem="xrK-bW-wta" secondAttribute="trailing" constant="32" id="I6f-ZE-rLO"/>
+                            <constraint firstItem="xrK-bW-wta" firstAttribute="centerY" secondItem="ZvG-Ah-0Ng" secondAttribute="centerY" id="QJi-QU-JCM"/>
+                            <constraint firstItem="xrK-bW-wta" firstAttribute="leading" secondItem="vWx-MU-yn0" secondAttribute="leading" constant="32" id="WbY-Ia-3nG"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EKl-Gd-I53" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-331" y="73"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="close" width="512" height="512"/>
+        <image name="logout" width="512" height="512"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
